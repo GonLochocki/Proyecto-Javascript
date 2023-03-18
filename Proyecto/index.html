@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/35278a4d00.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h2 class="logo">Financiera</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">       
+            &#8801 
+        </label>
+        <nav class="menu">
+            <a href="./login.html" id="inicio">Login</a>
+            <a href="./registro.html" id="registro">Regístrese</a>
+            <a href="">ADMIN</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+        <button id="cerrar">Cerrar sesión</button>
+    </header>
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3><span>PRESTAMOS: </span>Saca tu prestamo ahora! <br>CUOTAS FIJAS!</h3>
+            
+            <button class="boton-empezar" id="mio">Pedilo!</button>
+        </div>
+    </section>
+
+    <div id="prestamos">
+        
+    </div>
+
+    <section id="personas">
+        <div>
+            <img src="./img/chica-2-mod.jpg" alt="">
+            <h4> Buscás como hacer rendir tus ahorros?</h4>
+            <p>Con nuestros plazos fijos podes obtener el mejor rendimiento!</p>
+            <a href="#contenedor" id="boton-plazo-fijo" class="boton-saber-mas">Simulación</a>
+        </div>
+        <div>
+            <img src="./img/chico-mod.jpg" alt="">
+            <h4> Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, hic!</p>
+            <a href="#" class="boton-saber-mas">Saber más</a>
+        </div>
+    </section>
+
+    <div id="contenedor-plazo-fijo">
+        <!-- Se creará el plazo fijo desde JS -->
+    </div>
+
+    <section id="iconos">
+        <div class="contenido-iconos">
+            <div>
+                <i class="fa-solid fa-dollar-sign fa-3x"></i>
+                <h6>Rápido</h6>
+                <p>Te registras, lo solicitas, lo tenés!</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-dollar-sign fa-3x"></i>
+                <h6>En cuotas</h6>
+                <p>La cantidad de cuotas la elegís vos!</p>
+            </div>
+            <div id="icono-mobile">
+                <i class="fa-solid fa-dollar-sign fa-3x"></i>
+                <h6>Seguro</h6>
+                <p>Totalmente confidencial!</p>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section id="contacto">
+        <h4>Contactar con nosotros</h4>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">                    
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">                    
+                </div>
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="boton-formulario">
+                <a href="#" class="boton-saber-mas">Enviar mensaje</a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;2023</p>
+    </footer>
+    
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>     
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    
+</body>
+</html>
+ 

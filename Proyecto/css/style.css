@@ -1,0 +1,615 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+
+/* HEADER */
+
+header{
+    height: 100px;
+    background-color: #4d4d5c;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #6cc091;
+    font-weight: 200;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+  order: 1;  
+}
+
+#cerrar{
+    display: none;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #6cc091;
+}
+
+#check{
+    display: none;
+}
+
+/* BANNER */
+
+#banner{
+    padding: 0 50px;
+    background-image:url(../img/slide-web-muy-01.png) ;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before{
+    content: '';
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-banner{
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span{
+    font-weight: 600;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    align-self: baseline;
+    display: none;
+}
+
+.boton-empezar:hover{
+    background: #4747478f;
+    color: white;
+    transition: all 0.4s;
+}
+
+/* REGISTRO */
+
+#btn_log{
+    margin-top: 30px;
+}
+
+/* PRESTAMOS */ 
+
+#boton_solicitar:hover{
+    background-color: #4bae77;
+    border-color: #4bae77;
+    color: white;
+}
+
+#boton_solicitar{
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    border: solid 2px white;
+    border-radius: 10px;    
+    transition: all 0.4s;
+}
+
+#boton_calcular{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    border: solid 2px white;
+    border-radius: 10px;    
+    transition: all 0.4s;
+}
+
+#boton_calcular:hover{
+    background: #4747478f;
+    color: white;
+    transition: all 0.4s;
+}
+
+#prestamo{       
+    font-size: 20px;    
+    background-color: #4d4d5c;
+    padding: 15px; 
+    color: white;
+ }
+
+#boton_calcular{ 
+    font-size: 18px;
+}
+
+#total, #valor_cuota, #interes_neto{    
+    background-color: white;
+    margin-top: 5px;
+}
+
+.mje_solicitado{
+    background-color: lightsalmon;
+}
+
+.mje_otorgado{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+
+/* PLAZO FIJO */
+
+.plazo-fijo {
+    display: flex;
+    justify-content: center;
+    background-color: #34c380be;
+    padding: 30px;
+    border: solid 1px black;
+    box-shadow: 20px 20px 10px;     
+}
+
+.monto-plazo-fijo,
+.dias-plazo-fijo {
+    margin: 10px;    
+}
+
+
+
+/* PERSONAS */
+
+#personas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#personas img{
+    border-radius: 25%;
+}
+
+#personas div{
+    padding: 30px 30px;
+}
+
+#personas div h4{
+    color: #4D4D5C;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#personas div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #e87b28;
+    padding: 10px 30px;
+    border: solid 3px #e87b28;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.boton-saber-mas:hover{
+    background: #e87b28;
+    color: white;
+}
+
+/* ICONOS */
+
+#iconos{
+    padding: 0px 50px;
+    background: rgba(77,77,92,0.6);
+}
+
+.contenido-iconos{  
+   padding: 50px 50px 0px 50px;
+   display: flex;
+   justify-content: space-between;
+   text-align: center; 
+}
+
+.contenido-iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255,255,255,0.2);
+    
+}
+
+#icono-mobile{
+    border: none;
+}
+
+.contenido-iconos div i{
+    color: #6cc091;
+}
+
+.contenido-iconos div h6{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.contenido-iconos div p{
+    color: rgba(255,255,255,0.55);
+    font-size: 15px;
+}
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* FORMULARIO */
+
+
+.formulario{
+    border: solid 2px black;
+}
+
+.titulo_registro{
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    padding: 15px;
+    color: white;
+    background-color: #4bae77;
+}
+
+.mensaje_registro{
+    color: red;
+}
+
+#boton_registro{
+   
+    margin-top: 30px;
+    margin-bottom: 30px;     
+}
+
+.col-6{
+    margin-top: 20px;    
+}
+
+#contacto{
+    background: #6cc091;
+    padding: 50px 0px;
+    color: white;
+}
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+   display: block;
+   margin-bottom: 10px; 
+}
+
+form input,
+form textarea{
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: black;
+    width: 100%;
+}
+
+form input:focus,
+form input:focus{
+   border-left-color: #4bae77;
+   box-shadow: 0 0 0 1px #4bae77 ; 
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: black;
+}
+
+.mensaje{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;  
+}
+
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.boton-formulario .boton-saber-mas:hover{
+    background: #4fa7764d;
+}
+
+/* LOGIN */
+
+#mje_log {
+    display: flex;
+    flex-direction: column;
+}
+
+#usuario_incorrecto{
+    padding: 15px;
+    color: red;
+}
+
+.mensaje_login{
+    color: red;
+    padding-top: 10px;
+}
+
+#body_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4bae77, white);
+}
+
+
+#form_login{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px black;
+}
+
+#form_login .title{
+    color: black;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#form_login label{
+    margin-bottom: 35px;
+}
+
+#form_login label .fa-solid{
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+#form_login label input{
+   outline: none;
+   border: none;
+   color: black;
+   border-bottom: solid 1px black; 
+   padding: 0 5px;
+   font-size: 18px;
+}
+
+#form_login label input::placeholder {
+    color:grey;
+}
+
+#form_login .link{
+    color: black;
+    margin-bottom: 15px;
+}
+
+#form_login #button_login {
+    color: white;
+    border: none;
+    background: linear-gradient(to right, black, grey);
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background: #4D4D5C;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.pie_registro{
+    margin-top: 30px;
+    background-color: #4bae77;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }#body_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4bae77, white);
+}
+
+
+#form_login{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px black;
+}
+
+#form_login .title{
+    color: black;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#form_login label{
+    margin-bottom: 35px;
+}
+
+#form_login label .fa-solid{
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+#form_login label input{
+   outline: none;
+   border: none;
+   color: black;
+   border-bottom: solid 1px black; 
+   padding: 0 5px;
+   font-size: 18px;
+}
+
+#form_login label input::placeholder {
+    color:grey;
+}
+
+#form_login .link{
+    color: black;
+    margin-bottom: 15px;
+}
+
+#form_login #button_login {
+    color: white;
+    border: none;
+    background: linear-gradient(to right, black, grey);
+}
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c;        
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /* PERSONAS */
+
+    #personas{
+    flex-direction: column;
+    }
+
+    /* ICONOS */
+
+    .contenido-iconos{
+        flex-direction: column;
+    }
+
+    .contenido-iconos div{
+        border: none;
+    }
+
+    /* FORMULARIO */
+
+    .datos-form{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
